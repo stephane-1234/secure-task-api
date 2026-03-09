@@ -92,11 +92,11 @@ pipeline {
 
     post {
         success {
-            echo 'Pipeline terminé avec succès.'
-            echo "Application déployée localement sur le port ${HOST_PORT}."
+            echo 'Pipeline termine avec succes.'
+            echo "Application déployee localement sur le port ${HOST_PORT}."
         }
         failure {
-            echo "Le pipeline a échoué. Vérifie les logs Jenkins."
+            echo "Le pipeline a echoue. Verifie les logs Jenkins."
         }
         always {
             cleanWs()
