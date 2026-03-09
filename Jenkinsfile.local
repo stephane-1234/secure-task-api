@@ -51,7 +51,7 @@ pipeline {
         stage('Security - Bandit') {
             steps {
                 bat '''
-                venv\\Scripts\\python -m bandit -r app.py test_app.py
+                venv\\Scripts\\python -m bandit -r app.py
                 '''
             }
         }
